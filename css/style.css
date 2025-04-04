@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 body {
 	overflow: hidden;
 }
@@ -19,9 +21,9 @@ h1 {
 
 h2 {
 	font-family: "IBM Plex Mono", monospace;
-  	font-weight: 300;
+  	font-weight: 400;
   	letter-spacing: -2px;
-	font-size: 12pt;
+	font-size: 14pt;
 	color: green;
 	padding: 7px 0;
 	line-height: 0.9;
@@ -84,6 +86,11 @@ p.name {
 	top: calc(50% - 20px); /* 50% - 3/4 of icon height */
 }
 
+p.handle {
+ 	position: relative;
+	
+}
+
 .col {
 	outline: 1px dotted green;
 	border-radius: 5px;
@@ -92,7 +99,6 @@ p.name {
 
 .bio {
 	outline: 1px dotted green;
-	border-radius: 0px 0px 5px 5px;
 }
 
 
@@ -100,11 +106,17 @@ p.name {
 	height: 70px;		
 }
 
+div.social {
+	height: 40px;
+	outline: 1px dotted green;
+	border-radius: 0px 0px 8px 8px;
+	margin-top: 1px;
+}
+
 div.tab {
-	border-top: 1px dotted green;
-	border-left: 1px dotted green;
-	border-right: 1px dotted green;
+	outline: 1px dotted green;
 	border-radius: 8px 8px 0px 0px;
+	margin-bottom: 1px;
 }
 
 div.bio {
@@ -117,6 +129,20 @@ div.bio {
 	width: 150px;
 	padding: 0.5em;
 	z-index: 1;
+}
+
+.grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 
 .vertical-center {
