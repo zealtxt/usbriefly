@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+body {
+	overflow: hidden;
+}
+
+h1 {
+	font-family: "IBM Plex Mono", monospace;
+  	font-weight: 300;
+  	font-style: normal;
+	letter-spacing: -2px;
+	font-size: 16pt;
+	color: green;
+	padding: 7px 0;
+	line-height: 0.9;
+	position: relative;
+	top: calc(50% - 25px); /* 50% - 3/4 of icon height */
+}
+
+h2 {
+	font-family: "IBM Plex Mono", monospace;
+  	font-weight: 300;
+  	letter-spacing: -2px;
+	font-size: 12pt;
+	color: green;
+	padding: 7px 0;
+	line-height: 0.9;
+	position: relative;
+	top: calc(50% - 15px); /* 50% - 3/4 of icon height */	
+}
+
+h3 {
+	font-family: "IBM Plex Mono", monospace;
+  	font-weight: 400;
+  	letter-spacing: -2px;
+	font-size: 12pt;
+	color: green;
+	padding: 20px 0px 0px;
+	line-height: 0.9;
+	position: relative;
+}
+
+p {
+	font-family: "IBM Plex Mono", monospace;
+  	font-weight: 300;
+	letter-spacing: -2px;
+	font-size: 11pt;
+	color: green;
+	text-align: center;	
+	top: calc(50% - 20px); /* 50% - 3/4 of icon height */
+}
+
+a {
+	color: green;
+}
+
+a:hover {
+	color: green;
+}
+
+a.blur:hover {
+	filter: blur(3px);
+	font-style: normal;
+}
+
+p.summary{
+	font-family: "IBM Plex Mono", monospace;
+  	font-weight: 300;
+	letter-spacing: -1.5px;
+	font-size: 11pt;
+	color: green;
+	text-align: left;
+	padding: 10px 0;
+}
+
+p.name {
+	font-family: "IBM Plex Mono", monospace;
+  	font-weight: 300;
+	letter-spacing: -1.5px;
+	font-size: 10pt;
+	color: green;
+	text-align: center;	
+	position: relative;
+	top: calc(50% - 20px); /* 50% - 3/4 of icon height */
+}
+
+.col {
+	outline: 1px dotted green;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.bio {
+	outline: 1px dotted green;
+	border-radius: 0px 0px 5px 5px;
+}
+
+
+.row {
+	height: 70px;		
+}
+
+div.tab {
+	border-top: 1px dotted green;
+	border-left: 1px dotted green;
+	border-right: 1px dotted green;
+	border-radius: 8px 8px 0px 0px;
+}
+
+div.bio {
+	max-height: 373px;
+	overflow-y: scroll;
+	scroll-margin: 10px 0px;
+}
+
+#draggable { 
+	width: 150px;
+	padding: 0.5em;
+	z-index: 1;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+.bi-instagram {
+	position: relative;
+	top: calc(50% - 15px); /* 50% - 3/4 of icon height */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e9ecef;
+  margin: 10px 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  outline: 1px solid green;
+  background: #e9ecef;
+}
+
+
