@@ -60,7 +60,7 @@ a:hover {
 	color: green;
 	font-style: italic;
 }
-
+	
 a.blur:hover {
 	filter: blur(3px);
 	font-style: normal;
@@ -73,7 +73,7 @@ p.summary{
 	font-size: 11pt;
 	color: green;
 	text-align: left;
-	padding: 10px 0;
+	padding: 10px 20px 0;
 }
 
 p.name {
@@ -125,6 +125,14 @@ div.bio {
 	overflow-y: scroll;
 	scroll-margin: 10px 0px;
 }
+
+div.about {
+	outline: 1px dotted green;
+	max-height: 420px;
+	padding: 20px 0;
+	border-radius: 5px;
+}
+
 
 #draggable { 
 	width: 150px;
