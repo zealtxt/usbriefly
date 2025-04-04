@@ -34,8 +34,8 @@ h2 {
 h3 {
 	font-family: "IBM Plex Mono", monospace;
   	font-weight: 400;
-  	letter-spacing: -2px;
-	font-size: 12pt;
+  	letter-spacing: -1px;
+	font-size: 13pt;
 	color: green;
 	padding: 20px 0px 0px;
 	line-height: 0.9;
@@ -45,7 +45,7 @@ h3 {
 p {
 	font-family: "IBM Plex Mono", monospace;
   	font-weight: 300;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 	font-size: 11pt;
 	color: green;
 	text-align: center;	
@@ -58,6 +58,7 @@ a {
 
 a:hover {
 	color: green;
+	font-style: italic;
 }
 
 a.blur:hover {
@@ -86,9 +87,9 @@ p.name {
 	top: calc(50% - 20px); /* 50% - 3/4 of icon height */
 }
 
-p.handle {
+div.handle {
  	position: relative;
-	
+	top: calc(50% - 10px); /* 50% - 3/4 of icon height */	
 }
 
 .col {
