@@ -4,15 +4,16 @@
 
 body {
 	overflow: hidden;
+	background-color: #495140;
 }
 
 h1 {
-	font-family: "IBM Plex Mono", monospace;
+	font-family: "logic-monospace", monospace;
   	font-weight: 300;
   	font-style: normal;
 	letter-spacing: -2px;
 	font-size: 16pt;
-	color: green;
+	color: white;
 	padding: 7px 0;
 	line-height: 0.9;
 	position: relative;
@@ -20,11 +21,11 @@ h1 {
 }
 
 h2 {
-	font-family: "IBM Plex Mono", monospace;
-  	font-weight: 400;
+	font-family: "logic-monospace", monospace;
+  	font-weight: 300;
   	letter-spacing: -2px;
-	font-size: 14pt;
-	color: green;
+	font-size: 12pt;
+	color: white;
 	padding: 7px 0;
 	line-height: 0.9;
 	position: relative;
@@ -32,33 +33,35 @@ h2 {
 }
 
 h3 {
-	font-family: "IBM Plex Mono", monospace;
-  	font-weight: 400;
+	font-family: "logic-monospace", monospace;
+  	font-weight: 300;
   	letter-spacing: -1px;
-	font-size: 13pt;
-	color: green;
+	font-size: 11pt;
+	color: white;
 	padding: 20px 0px 0px;
 	line-height: 0.9;
 	position: relative;
 }
 
 p {
-	font-family: "IBM Plex Mono", monospace;
+	font-family: "logic-monospace", monospace;
   	font-weight: 300;
 	letter-spacing: -1px;
 	font-size: 11pt;
-	color: green;
+	color: white;
 	text-align: center;	
 	top: calc(50% - 20px); /* 50% - 3/4 of icon height */
 }
 
 a {
-	color: green;
+	color: white;
 }
 
 a:hover {
-	color: green;
-	font-style: italic;
+	color: white;
+	font-style: normal;
+	text-decoration: none;
+	transition-timing-function: ease;
 }
 	
 a.blur:hover {
@@ -66,56 +69,91 @@ a.blur:hover {
 	font-style: normal;
 }
 
-p.summary{
-	font-family: "IBM Plex Mono", monospace;
+img.comma {
+	height: 30px;
+}
+
+
+a.comma > img {
+	filter: blur(2px);	
+}
+
+a.comma:hover{ 
+font-style: italic; 
+}
+
+
+a.comma > img:hover {
+	filter: none;
+	transition: 250ms;
+}
+
+p.summary {
+	font-family: "logic-monospace", monospace;
   	font-weight: 300;
 	letter-spacing: -1.5px;
-	font-size: 11pt;
-	color: green;
+	font-size: 10pt;
+	color: white;
 	text-align: left;
 	padding: 10px 20px 0;
 }
 
+p.navigation {
+	color: #ffbaff;
+}
+
+p.navigation:hover {
+	font-style: italic;
+}
+
 p.name {
-	font-family: "IBM Plex Mono", monospace;
+	font-family: "logic-monospace", monospace;
   	font-weight: 300;
 	letter-spacing: -1.5px;
 	font-size: 10pt;
-	color: green;
+	color: white;
 	text-align: center;	
 	position: relative;
-	top: calc(50% - 20px); /* 50% - 3/4 of icon height */
+	line-height: 2;
 }
+
 
 div.handle {
  	position: relative;
 	top: calc(50% - 10px); /* 50% - 3/4 of icon height */	
 }
 
+
 .col {
-	outline: 1px dotted green;
-	border-radius: 5px;
+	outline: 0.1px dotted white;
+	border-radius: 1px;
 	width: 100%;
+	padding: 5px;
 }
 
 .bio {
-	outline: 1px dotted green;
+	outline: 0.1px dotted white;
 }
 
 
 .row {
-	height: 70px;		
+	height: 100%;
+}
+
+.center {
+	display: block;
+	margin: auto;
 }
 
 div.social {
 	height: 40px;
-	outline: 1px dotted green;
+	outline: 1px dotted white;
 	border-radius: 0px 0px 8px 8px;
 	margin-top: 1px;
 }
 
 div.tab {
-	outline: 1px dotted green;
+	outline: 1px dotted white;
 	border-radius: 8px 8px 0px 0px;
 	margin-bottom: 1px;
 }
@@ -127,10 +165,10 @@ div.bio {
 }
 
 div.about {
-	outline: 1px dotted green;
+	outline: .1px solid white;
 	max-height: 420px;
 	padding: 20px 0;
-	border-radius: 5px;
+	border-radius: 1px;
 }
 
 
@@ -161,10 +199,6 @@ div.about {
   align-items: center;
 }
 
-.bi-instagram {
-	position: relative;
-	top: calc(50% - 15px); /* 50% - 3/4 of icon height */
-}
 
 /* width */
 ::-webkit-scrollbar {
@@ -179,13 +213,13 @@ div.about {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: green;
+  background: white;
   border-radius: 2px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  outline: 1px solid green;
+  outline: 1px solid white;
   background: #e9ecef;
 }
 
