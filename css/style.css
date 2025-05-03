@@ -47,7 +47,7 @@ p {
 	font-family: "logic-monospace", monospace;
   	font-weight: 300;
 	letter-spacing: -1px;
-	font-size: 11pt;
+	font-size: 10pt;
 	color: white;
 	text-align: center;	
 	top: calc(50% - 20px); /* 50% - 3/4 of icon height */
@@ -67,25 +67,22 @@ a:hover {
 a.blur:hover {
 	filter: blur(3px);
 	font-style: normal;
+	transition-timing-function: ease-in;
 }
 
 img.comma {
-	height: 30px;
+	height: 25px;
 }
 
 
-a.comma > img {
-	filter: blur(2px);	
+a.comma {
+	filter: blur(1px);
 }
 
-a.comma:hover{ 
-font-style: italic; 
-}
-
-
-a.comma > img:hover {
+a.comma:hover {
 	filter: none;
-	transition: 250ms;
+	transition: 200ms;
+	transition-timing-function: linear;
 }
 
 p.summary {
@@ -104,6 +101,11 @@ p.navigation {
 
 p.navigation:hover {
 	font-style: italic;
+	text-decoration: underline;
+}
+
+p.navigation:active {
+	color: #fff;
 }
 
 p.name {
@@ -128,7 +130,7 @@ div.handle {
 	outline: 0.1px dotted white;
 	border-radius: 1px;
 	width: 100%;
-	padding: 5px;
+	padding: 0px;
 }
 
 .bio {
@@ -143,6 +145,12 @@ div.handle {
 .center {
 	display: block;
 	margin: auto;
+}
+
+.logo {
+	display: block;
+	margin: auto;
+	padding-bottom: 5px;
 }
 
 div.social {
@@ -165,12 +173,27 @@ div.bio {
 }
 
 div.about {
-	outline: .1px solid white;
-	max-height: 420px;
+	outline: 0px solid white;
 	padding: 20px 0;
-	border-radius: 1px;
 }
 
+.grain {
+    position: fixed;
+	top: -200px;
+	left: -200px;
+    height: 50%;
+    width: 25%;
+	mix-blend-mode: multiply;
+}
+.grain:before {
+     content: "";
+     width: calc(100% + 150rem);
+     height: calc(100% + 100rem);
+     position: fixed;
+     background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+     opacity: 0.25;
+     pointer-events: none; 
+}    
 
 #draggable { 
 	width: 150px;
